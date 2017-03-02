@@ -1,0 +1,26 @@
+body{
+	background: linear-gradient(to right, #ADE6D8, #1fddff);
+}
+
+#hAbout{
+	font-size: 200%;
+}
+
+#dAbout{
+	font-size:115%;
+}
+
+#display{
+	text-align:center;
+	font-size:200%;
+}
+
+#words{
+	text-align:center;
+	font-size:200%
+}
+
+#numbers{
+	text-align:center;
+	font-size:200%
+}
