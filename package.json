@@ -22,6 +22,7 @@
     "hbs": "^4.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.16.1"
+    "eslint": "^3.16.1",
+    "eslint-plugin-mocha": "^4.8.0"
   }
 }

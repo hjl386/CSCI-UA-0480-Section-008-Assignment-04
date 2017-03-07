@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const [PORT, HOST] = [8080, '127.0.0.1']
+const [PORT, HOST] = [8080, '127.0.0.1'];
 const fs = require('fs');
 
 app.set('view engine', 'hbs');
@@ -58,8 +58,8 @@ app.get('/dice', (req, res) => {
 	const num = req.query.numWords;
 	const delim = req.query.glue;
 	const glue = {'space':' ', 'dash':'-', 'comma':',', 'star':'*', 'none':''};
-	let passPhrase = [];
-	let passNumber = [];
+	const passPhrase = [];
+	const passNumber = [];
 	for(let i = 0; i < num; i++){
 		passPhrase[i] = choosePassPhrase();
 		passNumber[i] = diceValue(passPhrase[i]);
@@ -72,7 +72,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-	res.redirect(301, '/dice');
+	res.redirect('/dice');
 });
 
 app.get('/css/base.css', (req, res) => {
