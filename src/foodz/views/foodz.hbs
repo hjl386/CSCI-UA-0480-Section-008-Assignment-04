@@ -8,16 +8,20 @@
 		<input type='submit' value='Filter Meals'/>
 	</form>
 
-	<h2>Recommended Meals</h2>	
+	<h2 id='subtitle'>Recommended Meals</h2>	
 	
-	
-	{{#each database}}
-		<li>{{this.name}}</li> 
-		<li>{{this.category}}</li>
-		<li>{{this.description}}</li>
-	{{/each}}
+	<div id='recFood'>	
+		<ul style='list-style-type:none'>	
+			{{#each database}}
+				<div id='disFood'> 
+					<li>{{this.name}} ({{this.category}})</li>
+				</div>
+				<li>{{this.description}}</li>
+			{{/each}}
+		</ul>
+	</div>
 		
-	<h2>Add a Meal Recommendation</h2> 
+	<h2 id='subtitle'>Add a Meal Recommendation</h2> 
 	<form method='POST' action=''>
 		Name: <input type='text' name='name' value=''>
 		Description: <input type='text' name='description' value=''>

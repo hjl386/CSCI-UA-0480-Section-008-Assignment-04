@@ -2,3 +2,23 @@ body{
 	background: linear-gradient(to right, #E55C00, #BF6E00);
 }
 
+#title{
+	font-variant:small-caps;
+	font-weight:bold;
+	font-size:70px;
+}
+
+#subtitle{
+	font-variant:small-caps;	
+	font-size:35px;
+}
+
+#recFood{
+	font-size:20px;
+}
+
+#disFood{
+	font-variant:small-caps;
+	font-weight:bold;
+	font-size:25px;
+}
