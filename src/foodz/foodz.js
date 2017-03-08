@@ -23,7 +23,7 @@ app.get('/', (req, res) => {
 			return ele;
 		}
 	});
-	let type =''
+	let type ='';
 	req.query.filterCategory !== undefined ? type = '(' + req.query.filterCategory + ' only)' : type = '';
 	res.render('foodz', {'title':'Foodz', 'database':data, 'meal':type});
 });
