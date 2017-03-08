@@ -5,7 +5,7 @@
 	<label><input type='radio' name='filterCategory' value='anytime'> Anytime </label>
 	<input type='submit' value='Filter Meals'/>
 </form>
-
+<hr>
 <h2 id='subtitle'>Recommended Meals</h2>		
 <div id='recFood'>	
 	<ul style='list-style-type:none'>	
@@ -17,14 +17,17 @@
 		{{/each}}
 	</ul>
 </div>
-		
+<hr>		
 <h2 id='subtitle'>Add a Meal Recommendation</h2> 
 <form method='POST' action=''>
 	Name: <input type='text' name='name' value=''>
 	Description: <input type='text' name='description' value=''>
+	<br><br>
 	<label><input type='radio' name='category' value='breakfast'> Breakfast </label>	
 	<label><input type='radio' name='category' value='lunch'> Lunch </label>	
+	<br><br>
 	<label><input type='radio' name='category' value='dinner'> Dinner </label>	
 	<label><input type='radio' name='category' value='anytime'> Anytime </label>
+	<br><br>
 	<input type='submit' value='Add Meal'/>	
 </form>
