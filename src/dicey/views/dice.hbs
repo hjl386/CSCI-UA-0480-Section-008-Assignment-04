@@ -1,32 +1,29 @@
-<!DOCTYPE html>
-<html>
-	<center>
-	<form method='GET' action=''>
-		Number of Words: <input type='number' name='numWords' placeholder='e.g. 1 ,2, 3, ...' required/>
-		Separator: <select name='glue'>
-			<option value="space">Space " "</option>
-			<option value="dash">Dash "-"</option>
-			<option value="comma">Comma ","</option>
-			<option value="star">Star "*"</option>
-			<option value="none">None</option>
-		</select>
-		<input type='submit' value='Roll'/>
-	</form>
-	</center>
+<center>
+<form method='GET' action=''>
+	Number of Words: <input type='number' name='numWords' placeholder='e.g. 1 ,2, 3, ...' required/>
+	Separator: <select name='glue'>
+		<option value="space">Space " "</option>
+		<option value="dash">Dash "-"</option>
+		<option value="comma">Comma ","</option>
+		<option value="star">Star "*"</option>
+		<option value="none">None</option>
+	</select>
+	<input type='submit' value='Roll'/>
+</form>
+</center>
 	
-	<p><div id="display">
-		<mark>{{Data}}</mark>
-	</div></p>
+<p><div id="display">
+	<mark>{{Data}}</mark>
+</div></p>
 &nbsp;		
-	<div id="numbers">
-		{{#each passN}}
-			{{this}}
-		{{/each}}
-	</div>
+<div id="numbers">
+	{{#each passN}}
+		{{this}}
+	{{/each}}
+</div>
 &nbsp;
-	<div id="words">	
-		{{#each passP}}
-			{{this}}
-		{{/each}}
-	</div>
-</html>
+<div id="words">	
+	{{#each passP}}
+		{{this}}
+	{{/each}}
+</div>

@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 app.post('/', (req, res) => {
 	const data = {name:req.body.name, description:req.body.description, category:req.body.category};
 	dataGlobal.push(data);
-	console.log(req.body);
+//	console.log(req.body);
 	res.redirect('/'); 
 });
 
